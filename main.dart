@@ -1,22 +1,33 @@
 import 'package:dart_basics/task_1.dart';
+import 'package:dart_basics/task_2.dart';
 
-void main (){
-  // task 1 ----------------------------------------------------
+void main() {
+  print('-----------------[task_1]-----------------');
+
   const a = 2;
   const b = 11;
   const primeNumber = 6;
   const splitNumber = 100;
 
-  print('-----------------[task_1]-----------------');
   int divisor = DelimetersCalculator.greatestCommonDivisor(a, b);
-  print('Greatest common divisor of $a and $b: $divisor \n');
+  print('Greatest common divisor of $a and $b: $divisor');
 
   int multiple = DelimetersCalculator.lowestCommonMultiple(a, b);
-  print('Lowest common multilier of $a and $b: $multiple \n');
+  print('Lowest common multiplier of $a and $b: $multiple');
 
   bool isPrime = DelimetersCalculator.isPrimeNumber(primeNumber);
-  print('Number $primeNumber is prime: $isPrime \n');
+  print('Number $primeNumber is prime: $isPrime');
 
   List<int> primeFactors = DelimetersCalculator.splitPrimeFactors(splitNumber);
-  print('Prime factors of $splitNumber: $primeFactors \n');
+  print('Prime factors of $splitNumber: $primeFactors');
+
+  print('\n');
+  print('-----------------[task_2]-----------------');
+
+  int number_to_binary = 15;
+  List<int> binary_version = BinaryTranslation.int_to_binary(number_to_binary);
+  print('Binary version of $number_to_binary: $binary_version');
+
+  int decimal_version = BinaryTranslation.binary_to_int(binary_version);
+  print('Decimal version of $binary_version: $decimal_version');
 }
