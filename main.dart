@@ -64,4 +64,7 @@ void main() {
 
   double distance = A.distanceTo(B);
   print('Distance between $A and $B is $distance');
+
+  Point center = Point.center();
+  print('The point $center is the center');
 }
