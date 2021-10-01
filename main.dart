@@ -5,6 +5,7 @@ import 'package:dart_basics/task_4.dart';
 import 'package:dart_basics/task_5.dart';
 import 'package:dart_basics/task_6.dart';
 import 'package:dart_basics/task_7.dart';
+import 'package:dart_basics/task_8.dart';
 
 void main() {
   print('-----------------[task_1]-----------------');
@@ -29,33 +30,33 @@ void main() {
   print('\n');
   print('-----------------[task_2]-----------------');
 
-  int number_to_binary = 15;
-  List<int> binary_version = BinaryTranslation.intToBinary(number_to_binary);
-  print('Binary version of $number_to_binary: $binary_version');
+  int numberToBinary = 15;
+  List<int> binaryVersion = BinaryTranslation.intToBinary(numberToBinary);
+  print('Binary version of $numberToBinary: $binaryVersion');
 
-  int decimal_version = BinaryTranslation.binaryToInt(binary_version);
-  print('Decimal version of $binary_version: $decimal_version');
+  int decimalVersion = BinaryTranslation.binaryToInt(binaryVersion);
+  print('Decimal version of $binaryVersion: $decimalVersion');
 
   print('\n');
   print('-----------------[task_3]-----------------');
 
-  String str_to_numbers = 'adsf 10 0.3';
-  List<num> numbers_from_string = numSplitter(str_to_numbers);
-  print('From string "$str_to_numbers" we get numbers: $numbers_from_string');
+  String strToNumbers = 'adsf 10 0.3';
+  List<num> numbersFromString = numSplitter(strToNumbers);
+  print('From string "$strToNumbers" we get numbers: $numbersFromString');
 
   print('\n');
   print('-----------------[task_4]-----------------');
 
   List<String> collection = ['a', 'b', 'c', 'a', 'b'];
-  Map<String, int> words_counted = wordCount(collection);
-  print('In the collection "$collection" we count words: $words_counted');
+  Map<String, int> wordsCounted = wordCount(collection);
+  print('In the collection "$collection" we count words: $wordsCounted');
 
   print('\n');
   print('-----------------[task_5]-----------------');
 
-  String str_numbers = 'one, one, two, two, three, four, walking, six';
-  numbers_from_string = NumberTranslator.translate(str_numbers);
-  print('In the string "$str_numbers" we found numbers: $numbers_from_string');
+  String strNumbers = 'one, one, two, two, three, four, walking, six';
+  numbersFromString = NumberTranslator.translate(strNumbers);
+  print('In the string "$strNumbers" we found numbers: $numbersFromString');
 
   print('\n');
   print('-----------------[task_6]-----------------');
@@ -75,4 +76,18 @@ void main() {
   num number = 7;
   num root = 3;
   print('The root $root of the number $number is ${number.root(root)}');
+
+  print('\n');
+  print('-----------------[task_8]-----------------');
+
+  AdminUser admin = AdminUser('fakafafakafa@mail.ru');
+  String mailSystem = admin.getMailSystem();
+  print('The user $admin has email system $mailSystem');
+
+  UserManager<User> userManager = UserManager([
+    User('fakafafakafa@mail.ru'),
+    User('ilya@yandex.ru'),
+    AdminUser('admin@gmail.ru')
+  ]);
+  print('All user emails: ${userManager.getEmails()}');
 }
