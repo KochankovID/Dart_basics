@@ -33,7 +33,7 @@ List<int> _transition_to(int num, int notation) {
 int _transition_from(List<int> num, int notation) {
   int result = 0;
   for (int i = 0; i < num.length; i++) {
-    result += pow(notation, i) * num[i];
+    result += (pow(notation, i) * num[i]).toInt();
   }
   return result;
 }

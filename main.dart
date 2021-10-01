@@ -1,5 +1,6 @@
 import 'package:dart_basics/task_1.dart';
 import 'package:dart_basics/task_2.dart';
+import 'package:dart_basics/task_3.dart';
 
 void main() {
   print('-----------------[task_1]-----------------');
@@ -30,4 +31,11 @@ void main() {
 
   int decimal_version = BinaryTranslation.binary_to_int(binary_version);
   print('Decimal version of $binary_version: $decimal_version');
+
+  print('\n');
+  print('-----------------[task_3]-----------------');
+
+  String str_to_numbers = 'adsf 10 0.3';
+  List<num> numbers_from_string = num_splitter(str_to_numbers);
+  print('From string "$str_to_numbers" we get numbers: $numbers_from_string');
 }
