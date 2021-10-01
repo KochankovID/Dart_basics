@@ -4,6 +4,7 @@ import 'package:dart_basics/task_3.dart';
 import 'package:dart_basics/task_4.dart';
 import 'package:dart_basics/task_5.dart';
 import 'package:dart_basics/task_6.dart';
+import 'package:dart_basics/task_7.dart';
 
 void main() {
   print('-----------------[task_1]-----------------');
@@ -67,4 +68,11 @@ void main() {
 
   Point center = Point.center();
   print('The point $center is the center');
+
+  print('\n');
+  print('-----------------[task_7]-----------------');
+
+  num number = 7;
+  num root = 3;
+  print('The root $root of the number $number is ${number.root(root)}');
 }
