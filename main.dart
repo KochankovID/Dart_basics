@@ -1,6 +1,7 @@
 import 'package:dart_basics/task_1.dart';
 import 'package:dart_basics/task_2.dart';
 import 'package:dart_basics/task_3.dart';
+import 'package:dart_basics/task_4.dart';
 
 void main() {
   print('-----------------[task_1]-----------------');
@@ -38,4 +39,11 @@ void main() {
   String str_to_numbers = 'adsf 10 0.3';
   List<num> numbers_from_string = num_splitter(str_to_numbers);
   print('From string "$str_to_numbers" we get numbers: $numbers_from_string');
+
+  print('\n');
+  print('-----------------[task_4]-----------------');
+
+  List<String> collection = ['a', 'b', 'c', 'a', 'b'];
+  Map<String, int> words_counted = word_count(collection);
+  print('In the collection "$collection" we count words: $words_counted');
 }
