@@ -1,4 +1,4 @@
-List<num> num_splitter(String str) {
+List<num> numSplitter(String str) {
   return str
       .split(' ')
       .map((element) {
