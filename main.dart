@@ -2,6 +2,7 @@ import 'package:dart_basics/task_1.dart';
 import 'package:dart_basics/task_2.dart';
 import 'package:dart_basics/task_3.dart';
 import 'package:dart_basics/task_4.dart';
+import 'package:dart_basics/task_5.dart';
 
 void main() {
   print('-----------------[task_1]-----------------');
@@ -46,4 +47,11 @@ void main() {
   List<String> collection = ['a', 'b', 'c', 'a', 'b'];
   Map<String, int> words_counted = word_count(collection);
   print('In the collection "$collection" we count words: $words_counted');
+
+  print('\n');
+  print('-----------------[task_5]-----------------');
+
+  String str_numbers = 'one, one, two, two, three, four, walking, six';
+  numbers_from_string = NumberTranslator.translate(str_numbers);
+  print('In the string "$str_numbers" we found numbers: $numbers_from_string');
 }
